@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "note": "DEMO / ILLUSTRATIVE DATA — historical event summaries used for model-validation display only. Statistics sourced from publicly available NDMA, IMD and published academic reports; exact figures may differ from authoritative databases.",
+    "sources": ["India Meteorological Department (IMD)", "NDMA India", "NOAA IBTrACS", "EM-DAT International Disaster Database"],
+    "lastUpdated": "2026-09-30"
+  },
+  "events": [
+    {
+      "id": "FANI-2019",
+      "name": "Cyclone Fani",
+      "year": 2019,
+      "basin": "Bay of Bengal",
+      "region": "Odisha Coast, India",
+      "landfallDate": "2019-05-03",
+      "landfallLocation": "Puri, Odisha",
+      "category": 5,
+      "peakWindKmh": 250,
+      "peakWindKnots": 135,
+      "minPressureHpa": 932,
+      "stormSurgeM": 3.5,
+      "rainfallMm24h": 320,
+      "deaths": 89,
+      "affectedPopulation": 16000000,
+      "economicDamageUSD": 8100000000,
+      "displacedPersons": 1500000,
+      "severity": "critical",
+      "dataCompleteness": "partial",
+      "preEventConditions": {
+        "seaSurfaceTempC": 31.2,
+        "windShearKmh": 18,
+        "moistureIndex": 0.87,
+        "maddenJulianOscillation": "active",
+        "eddyCurrentPresent": true,
+        "notes": "Extremely favorable oceanic and atmospheric conditions. Record-warm Bay waters (>30°C over large area) and weak wind shear enabled rapid intensification from Category 1 to Category 5 in ~36 h."
+      },
+      "modeledRisk": {
+        "modeledCategory": 5,
+        "modeledRiskScore": 94,
+        "modeledRiskCategory": "CRITICAL",
+        "modeledStormSurgeM": 3.8,
+        "modeledRainfallMm24h": 310,
+        "predictionLeadTimeHours": 72,
+        "notes": "Demo baseline model correctly classified as CRITICAL. Risk score 94/100. Storm surge estimate within 0.3 m of observed."
+      },
+      "observedOutcome": {
+        "actualCategory": 5,
+        "actualRiskCategory": "CRITICAL",
+        "actualStormSurgeM": 3.5,
+        "actualRainfallMm24h": 320,
+        "correctClassification": true,
+        "surgeDeltaM": 0.3,
+        "rainfallDeltaMm": 10,
+        "notes": "Landfall near Puri at 185 km/h sustained winds. Record evacuation of 1.2 million people reduced fatalities. 10,000+ villages affected."
+      },
+      "keyLessons": [
+        "Early warning (72 h lead) allowed historic pre-positioning of relief",
+        "Coordinated mass evacuation saved thousands of lives",
+        "Coastal mangrove buffer reduced inland surge penetration",
+        "Power infrastructure most severely impacted — 11,000+ poles downed"
+      ]
+    },
+    {
+      "id": "AMPHAN-2020",
+      "name": "Cyclone Amphan",
+      "year": 2020,
+      "basin": "Bay of Bengal",
+      "region": "West Bengal / Bangladesh",
+      "landfallDate": "2020-05-20",
+      "landfallLocation": "Sundarbans Delta, West Bengal",
+      "category": 5,
+      "peakWindKmh": 260,
+      "peakWindKnots": 140,
+      "minPressureHpa": 920,
+      "stormSurgeM": 5.5,
+      "rainfallMm24h": 280,
+      "deaths": 128,
+      "affectedPopulation": 14900000,
+      "economicDamageUSD": 13500000000,
+      "displacedPersons": 2400000,
+      "severity": "critical",
+      "dataCompleteness": "partial",
+      "preEventConditions": {
+        "seaSurfaceTempC": 32.1,
+        "windShearKmh": 12,
+        "moistureIndex": 0.92,
+        "maddenJulianOscillation": "weakly_active",
+        "eddyCurrentPresent": true,
+        "notes": "Exceptionally warm ocean surface (32°C). Coincided with COVID-19 lockdown, complicating evacuation logistics. Rapid intensification from 120 km/h to 260 km/h in 24 h."
+      },
+      "modeledRisk": {
+        "modeledCategory": 5,
+        "modeledRiskScore": 97,
+        "modeledRiskCategory": "CRITICAL",
+        "modeledStormSurgeM": 5.8,
+        "modeledRainfallMm24h": 265,
+        "predictionLeadTimeHours": 48,
+        "notes": "Model classified CRITICAL with risk score 97/100. Surge estimate slightly over-predicted at +0.3 m. Correct trajectory toward Sundarbans."
+      },
+      "observedOutcome": {
+        "actualCategory": 5,
+        "actualRiskCategory": "CRITICAL",
+        "actualStormSurgeM": 5.5,
+        "actualRainfallMm24h": 280,
+        "correctClassification": true,
+        "surgeDeltaM": 0.3,
+        "rainfallDeltaMm": 15,
+        "notes": "Strongest cyclone ever recorded in the Bay of Bengal at landfall. Kolkata city severely flooded. Massive economic losses in West Bengal."
+      },
+      "keyLessons": [
+        "COVID-19 complicated shelter-in-place vs. evacuation decisions",
+        "Sundarbans mangroves provided partial storm surge buffer",
+        "Urban infrastructure in Kolkata highly vulnerable to surge and wind",
+        "Economic losses disproportionate — dense urban and agricultural exposure"
+      ]
+    },
+    {
+      "id": "YAAS-2021",
+      "name": "Cyclone Yaas",
+      "year": 2021,
+      "basin": "Bay of Bengal",
+      "region": "Odisha / West Bengal Coast",
+      "landfallDate": "2021-05-26",
+      "landfallLocation": "Balasore, Odisha",
+      "category": 4,
+      "peakWindKmh": 195,
+      "peakWindKnots": 105,
+      "minPressureHpa": 955,
+      "stormSurgeM": 4.0,
+      "rainfallMm24h": 240,
+      "deaths": 19,
+      "affectedPopulation": 12000000,
+      "economicDamageUSD": 3000000000,
+      "displacedPersons": 1200000,
+      "severity": "high",
+      "dataCompleteness": "partial",
+      "preEventConditions": {
+        "seaSurfaceTempC": 30.5,
+        "windShearKmh": 20,
+        "moistureIndex": 0.83,
+        "maddenJulianOscillation": "inactive",
+        "eddyCurrentPresent": false,
+        "notes": "Favorable but not exceptional conditions. High tides at landfall amplified storm surge significantly — concurrent spring tide added ~1 m to surge levels."
+      },
+      "modeledRisk": {
+        "modeledCategory": 4,
+        "modeledRiskScore": 82,
+        "modeledRiskCategory": "HIGH",
+        "modeledStormSurgeM": 3.8,
+        "modeledRainfallMm24h": 230,
+        "predictionLeadTimeHours": 60,
+        "notes": "Model correctly classified HIGH. Did not fully capture spring tide amplification in surge estimate (-0.2 m vs observed). Rainfall within 10 mm of observed."
+      },
+      "observedOutcome": {
+        "actualCategory": 4,
+        "actualRiskCategory": "HIGH",
+        "actualStormSurgeM": 4.0,
+        "actualRainfallMm24h": 240,
+        "correctClassification": true,
+        "surgeDeltaM": 0.2,
+        "rainfallDeltaMm": 10,
+        "notes": "Landfall near Balasore during high tide created worst-case surge. Successful proactive evacuation of 1.2 million people. Low death toll credited to preparedness."
+      },
+      "keyLessons": [
+        "Tidal timing critically amplifies or dampens storm surge impact",
+        "Mass evacuation framework from Fani/Amphan retained institutional memory",
+        "Odisha's cyclone preparedness model recognized as global best practice",
+        "Coastal embankments (bunds) breached in multiple locations"
+      ]
+    },
+    {
+      "id": "MANDOUS-2022",
+      "name": "Cyclone Mandous",
+      "year": 2022,
+      "basin": "Bay of Bengal",
+      "region": "Tamil Nadu / Andhra Pradesh Coast",
+      "landfallDate": "2022-12-09",
+      "landfallLocation": "Mahabalipuram, Tamil Nadu",
+      "category": 1,
+      "peakWindKmh": 90,
+      "peakWindKnots": 49,
+      "minPressureHpa": 993,
+      "stormSurgeM": 1.2,
+      "rainfallMm24h": 160,
+      "deaths": 11,
+      "affectedPopulation": 800000,
+      "economicDamageUSD": 120000000,
+      "displacedPersons": 180000,
+      "severity": "medium",
+      "dataCompleteness": "partial",
+      "preEventConditions": {
+        "seaSurfaceTempC": 28.8,
+        "windShearKmh": 35,
+        "moistureIndex": 0.71,
+        "maddenJulianOscillation": "inactive",
+        "eddyCurrentPresent": false,
+        "notes": "Weakening vertical wind shear and moderate SST prevented significant intensification. System weakened just before landfall due to increasing shear."
+      },
+      "modeledRisk": {
+        "modeledCategory": 2,
+        "modeledRiskScore": 45,
+        "modeledRiskCategory": "MEDIUM",
+        "modeledStormSurgeM": 1.5,
+        "modeledRainfallMm24h": 175,
+        "predictionLeadTimeHours": 36,
+        "notes": "Model predicted MEDIUM risk (Category 2). Observed was Category 1 at landfall after late weakening. Conservative over-prediction is safety-appropriate."
+      },
+      "observedOutcome": {
+        "actualCategory": 1,
+        "actualRiskCategory": "MEDIUM",
+        "actualStormSurgeM": 1.2,
+        "actualRainfallMm24h": 160,
+        "correctClassification": false,
+        "surgeDeltaM": 0.3,
+        "rainfallDeltaMm": 15,
+        "notes": "Risk category matched (MEDIUM) but intensity over-predicted by one category. Conservative bias is operationally acceptable — better to over-warn than under-warn."
+      },
+      "keyLessons": [
+        "Late weakening due to wind shear is difficult to capture at 36 h lead",
+        "Over-prediction of intensity leads to unnecessary but safe evacuations",
+        "Urban coastal Chennai highly exposed to even moderate surge/flood",
+        "Drainage infrastructure in low-lying areas remains key vulnerability"
+      ]
+    }
+  ]
+}

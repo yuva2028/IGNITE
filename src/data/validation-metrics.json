@@ -1,0 +1,85 @@
+{
+  "evaluation_timestamp": "2026-09-23T16:15:23.630144+00:00",
+  "model_name": "Demo Baseline Model",
+  "model_architecture": "RandomForest (Classifier + Regressor)",
+  "is_demo_baseline": true,
+  "test_samples_count": 1200,
+  "classes": [
+    "CRITICAL",
+    "HIGH",
+    "LOW",
+    "MEDIUM"
+  ],
+  "metrics": {
+    "accuracy": 0.94,
+    "precision_weighted": 0.9399,
+    "precision_macro": 0.9419,
+    "recall_weighted": 0.94,
+    "recall_macro": 0.8353,
+    "f1_score_weighted": 0.9397,
+    "f1_score_macro": 0.8794,
+    "roc_auc_weighted": 0.989,
+    "risk_score_mae": 1.84,
+    "risk_score_r2": 0.9693
+  },
+  "per_class_metrics": {
+    "CRITICAL": {
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1_score": 0.8,
+      "support": 6
+    },
+    "HIGH": {
+      "precision": 0.8947,
+      "recall": 0.7907,
+      "f1_score": 0.8395,
+      "support": 43
+    },
+    "LOW": {
+      "precision": 0.9558,
+      "recall": 0.9624,
+      "f1_score": 0.9591,
+      "support": 719
+    },
+    "MEDIUM": {
+      "precision": 0.9171,
+      "recall": 0.9213,
+      "f1_score": 0.9192,
+      "support": 432
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "CRITICAL",
+      "HIGH",
+      "LOW",
+      "MEDIUM"
+    ],
+    "matrix": [
+      [
+        4,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        34,
+        0,
+        9
+      ],
+      [
+        0,
+        0,
+        692,
+        27
+      ],
+      [
+        0,
+        2,
+        32,
+        398
+      ]
+    ]
+  }
+}

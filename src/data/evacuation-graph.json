@@ -1,0 +1,148 @@
+{
+  "_note": "SIMULATED DEMO DATA — Road graph for Phase 7 evacuation routing. Not real OSM or routing data.",
+  "_methodology": "Simplified graph derived from NH/SH road alignment data for Odisha coast. Nodes = key intersections, shelters, zone centroids. Edges = road segments with simulated risk levels matching infrastructure.json.",
+
+  "nodes": [
+    { "id": "n-puri-c",     "name": "Puri Town Center",          "lat": 19.808, "lng": 85.838, "zone_id": "rz-001", "isShelter": false },
+    { "id": "n-puri-s",     "name": "Puri Multipurpose Shelter", "lat": 19.803, "lng": 85.844, "zone_id": "rz-001", "isShelter": true,  "shelter_id": "s-001" },
+    { "id": "n-konark-c",   "name": "Konark Town Center",        "lat": 19.897, "lng": 86.124, "zone_id": "rz-002", "isShelter": false },
+    { "id": "n-konark-s",   "name": "Konark Cyclone Shelter",    "lat": 19.895, "lng": 86.124, "zone_id": "rz-002", "isShelter": true,  "shelter_id": "s-002" },
+    { "id": "n-satapada",   "name": "Satapada Junction",         "lat": 19.621, "lng": 85.542, "zone_id": "rz-003", "isShelter": false },
+    { "id": "n-satapada-s", "name": "Satapada Shelter",          "lat": 19.621, "lng": 85.542, "zone_id": "rz-003", "isShelter": true,  "shelter_id": "s-003" },
+    { "id": "n-kendrapara", "name": "Kendrapara Town",           "lat": 20.499, "lng": 86.423, "zone_id": "rz-004", "isShelter": false },
+    { "id": "n-rajnagar-s", "name": "Rajnagar Cyclone Shelter",  "lat": 20.620, "lng": 86.870, "zone_id": "rz-004", "isShelter": true,  "shelter_id": "s-004" },
+    { "id": "n-ersama",     "name": "Ersama Junction",           "lat": 20.151, "lng": 86.389, "zone_id": "rz-005", "isShelter": false },
+    { "id": "n-ersama-s",   "name": "Ersama Block Shelter",      "lat": 20.151, "lng": 86.389, "zone_id": "rz-005", "isShelter": true,  "shelter_id": "s-005" },
+    { "id": "n-bbsr",       "name": "Bhubaneswar Interchange",   "lat": 20.296, "lng": 85.838, "zone_id": null,     "isShelter": false },
+    { "id": "n-bbsr-s",     "name": "BBSR Sports Complex Shelter","lat": 20.268, "lng": 85.817, "zone_id": null,    "isShelter": true,  "shelter_id": "s-006" },
+    { "id": "n-cuttack",    "name": "Cuttack Junction",          "lat": 20.472, "lng": 85.877, "zone_id": null,     "isShelter": false },
+    { "id": "n-berhampur",  "name": "Berhampur NH-16 Junction",  "lat": 19.312, "lng": 84.808, "zone_id": "rz-006", "isShelter": false },
+    { "id": "n-chilika-n",  "name": "Chilika North Shore",       "lat": 19.760, "lng": 85.470, "zone_id": "rz-003", "isShelter": false },
+    { "id": "n-paradeep",   "name": "Paradeep Port Junction",    "lat": 20.316, "lng": 86.607, "zone_id": "rz-005", "isShelter": false },
+    { "id": "n-jagatsinghpur","name":"Jagatsinghpur Junction",   "lat": 20.270, "lng": 86.170, "zone_id": "rz-005", "isShelter": false },
+    { "id": "n-chandipur-s","name": "Chandipur Beach Shelter",   "lat": 21.457, "lng": 87.012, "zone_id": null,     "isShelter": true,  "shelter_id": "s-007" }
+  ],
+
+  "edges": [
+    {
+      "id": "e-001", "from": "n-puri-c", "to": "n-konark-c",
+      "road_name": "NH-316 — Puri to Konark", "road_id": "r-001",
+      "distance_km": 36, "risk_level": "critical", "is_blocked": false,
+      "speed_kmh": 20, "passable": true
+    },
+    {
+      "id": "e-002", "from": "n-puri-c", "to": "n-puri-s",
+      "road_name": "Puri Marine Drive (local)", "road_id": "r-001",
+      "distance_km": 1.2, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 15, "passable": true
+    },
+    {
+      "id": "e-003", "from": "n-puri-c", "to": "n-chilika-n",
+      "road_name": "SH-17 — Puri to Chilika North", "road_id": "r-003",
+      "distance_km": 32, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 25, "passable": true
+    },
+    {
+      "id": "e-004", "from": "n-chilika-n", "to": "n-satapada",
+      "road_name": "SH-17 — Chilika to Satapada", "road_id": "r-003",
+      "distance_km": 16, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 20, "passable": true
+    },
+    {
+      "id": "e-005", "from": "n-puri-c", "to": "n-bbsr",
+      "road_name": "NH-316 — Puri to Bhubaneswar", "road_id": "r-002",
+      "distance_km": 62, "risk_level": "medium", "is_blocked": false,
+      "speed_kmh": 45, "passable": true
+    },
+    {
+      "id": "e-006", "from": "n-bbsr", "to": "n-bbsr-s",
+      "road_name": "Stadium Road, Bhubaneswar", "road_id": "r-006",
+      "distance_km": 3, "risk_level": "safe", "is_blocked": false,
+      "speed_kmh": 30, "passable": true
+    },
+    {
+      "id": "e-007", "from": "n-bbsr", "to": "n-cuttack",
+      "road_name": "NH-16 — Bhubaneswar to Cuttack", "road_id": "r-006",
+      "distance_km": 28, "risk_level": "medium", "is_blocked": false,
+      "speed_kmh": 40, "passable": true
+    },
+    {
+      "id": "e-008", "from": "n-bbsr", "to": "n-berhampur",
+      "road_name": "NH-16 — Bhubaneswar to Berhampur", "road_id": "r-002",
+      "distance_km": 162, "risk_level": "medium", "is_blocked": false,
+      "speed_kmh": 50, "passable": true
+    },
+    {
+      "id": "e-009", "from": "n-konark-c", "to": "n-konark-s",
+      "road_name": "Konark Local Road", "road_id": "r-001",
+      "distance_km": 0.5, "risk_level": "critical", "is_blocked": false,
+      "speed_kmh": 10, "passable": true
+    },
+    {
+      "id": "e-010", "from": "n-kendrapara", "to": "n-rajnagar-s",
+      "road_name": "Coastal Route — Kendrapara", "road_id": "r-005",
+      "distance_km": 58, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 25, "passable": true
+    },
+    {
+      "id": "e-011", "from": "n-kendrapara", "to": "n-cuttack",
+      "road_name": "NH-53 — Kendrapara to Cuttack (return)", "road_id": "r-004",
+      "distance_km": 80, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 30, "passable": true
+    },
+    {
+      "id": "e-012", "from": "n-cuttack", "to": "n-bbsr",
+      "road_name": "NH-16 — Cuttack to Bhubaneswar", "road_id": "r-006",
+      "distance_km": 28, "risk_level": "medium", "is_blocked": false,
+      "speed_kmh": 40, "passable": true
+    },
+    {
+      "id": "e-013", "from": "n-ersama", "to": "n-jagatsinghpur",
+      "road_name": "Erasama–Jagatsinghpur Road", "road_id": "r-004",
+      "distance_km": 22, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 25, "passable": true
+    },
+    {
+      "id": "e-014", "from": "n-jagatsinghpur", "to": "n-bbsr",
+      "road_name": "NH-55 — Jagatsinghpur to Bhubaneswar", "road_id": "r-004",
+      "distance_km": 86, "risk_level": "medium", "is_blocked": false,
+      "speed_kmh": 45, "passable": true
+    },
+    {
+      "id": "e-015", "from": "n-paradeep", "to": "n-cuttack",
+      "road_name": "NH-53 — Paradeep to Cuttack", "road_id": "r-004",
+      "distance_km": 92, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 25, "passable": true
+    },
+    {
+      "id": "e-016", "from": "n-ersama", "to": "n-ersama-s",
+      "road_name": "Ersama Shelter Access Road", "road_id": "r-004",
+      "distance_km": 0.3, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 10, "passable": true
+    },
+    {
+      "id": "e-017", "from": "n-satapada", "to": "n-satapada-s",
+      "road_name": "Satapada Shelter Driveway", "road_id": "r-003",
+      "distance_km": 0.2, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 10, "passable": true
+    },
+    {
+      "id": "e-018", "from": "n-chilika-n", "to": "n-bbsr",
+      "road_name": "SH-17 / NH-316 — Chilika North to Bhubaneswar", "road_id": "r-002",
+      "distance_km": 50, "risk_level": "medium", "is_blocked": false,
+      "speed_kmh": 40, "passable": true
+    },
+    {
+      "id": "e-019", "from": "n-kendrapara", "to": "n-paradeep",
+      "road_name": "Coastal Delta Link — Kendrapara to Paradeep", "road_id": "r-005",
+      "distance_km": 38, "risk_level": "high", "is_blocked": false,
+      "speed_kmh": 20, "passable": true
+    },
+    {
+      "id": "e-020", "from": "n-konark-c", "to": "n-bbsr",
+      "road_name": "Konark–Bhubaneswar Expressway", "road_id": "r-001",
+      "distance_km": 65, "risk_level": "medium", "is_blocked": false,
+      "speed_kmh": 50, "passable": true
+    }
+  ]
+}

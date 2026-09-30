@@ -1,0 +1,135 @@
+{
+  "_note": "DEMO / SIMULATED DATA — Risk levels are for demonstration only. Not based on real assessments.",
+  "zones": [
+    {
+      "id": "rz-001",
+      "name": "Puri Coastal Belt",
+      "severity": "critical",
+      "population": 124000,
+      "area_km2": 180,
+      "elevation_m": 2,
+      "districtHq": "Puri",
+      "riskFactors": ["Storm surge >4m", "Low elevation", "Dense coastal settlement", "Limited road egress"],
+      "coordinates": [
+        [85.70, 19.70], [86.02, 19.70], [86.02, 19.95], [85.70, 19.95], [85.70, 19.70]
+      ]
+    },
+    {
+      "id": "rz-002",
+      "name": "Konark–Chandrabhaga Shoreline",
+      "severity": "critical",
+      "population": 68000,
+      "area_km2": 95,
+      "elevation_m": 3,
+      "districtHq": "Puri",
+      "riskFactors": ["Direct wave exposure", "Sandy barrier coastline", "High surge velocity"],
+      "coordinates": [
+        [86.02, 19.85], [86.32, 19.85], [86.32, 20.05], [86.02, 20.05], [86.02, 19.85]
+      ]
+    },
+    {
+      "id": "rz-003",
+      "name": "Chilika Lake South Margin",
+      "severity": "high",
+      "population": 215000,
+      "area_km2": 340,
+      "elevation_m": 5,
+      "districtHq": "Khurda",
+      "riskFactors": ["Lagoon backwater surge", "River flooding confluence", "Dense fishing communities"],
+      "coordinates": [
+        [85.10, 19.40], [85.60, 19.40], [85.60, 19.80], [85.10, 19.80], [85.10, 19.40]
+      ]
+    },
+    {
+      "id": "rz-004",
+      "name": "Kendrapara Coastal Zone",
+      "severity": "high",
+      "population": 341000,
+      "area_km2": 420,
+      "elevation_m": 4,
+      "districtHq": "Kendrapara",
+      "riskFactors": ["Mahanadi delta flood plain", "Multi-channel drainage obstruction", "Long inundation duration"],
+      "coordinates": [
+        [86.20, 20.20], [86.80, 20.20], [86.80, 20.75], [86.20, 20.75], [86.20, 20.20]
+      ]
+    },
+    {
+      "id": "rz-005",
+      "name": "Jagatsinghpur District",
+      "severity": "high",
+      "population": 278000,
+      "area_km2": 310,
+      "elevation_m": 6,
+      "districtHq": "Jagatsinghpur",
+      "riskFactors": ["Storm surge penetration via Devi river", "Low-lying agricultural land", "Embankment failure risk"],
+      "coordinates": [
+        [86.10, 20.00], [86.50, 20.00], [86.50, 20.40], [86.10, 20.40], [86.10, 20.00]
+      ]
+    },
+    {
+      "id": "rz-006",
+      "name": "Ganjam Coastal Strip",
+      "severity": "medium",
+      "population": 312000,
+      "area_km2": 280,
+      "elevation_m": 8,
+      "districtHq": "Berhampur",
+      "riskFactors": ["Peripheral wind damage", "Coastal erosion prone", "Moderate surge exposure"],
+      "coordinates": [
+        [84.80, 19.00], [85.30, 19.00], [85.30, 19.50], [84.80, 19.50], [84.80, 19.00]
+      ]
+    },
+    {
+      "id": "rz-007",
+      "name": "Bhubaneswar Urban Periphery",
+      "severity": "medium",
+      "population": 480000,
+      "area_km2": 185,
+      "elevation_m": 45,
+      "districtHq": "Bhubaneswar",
+      "riskFactors": ["High wind damage potential", "Urban tree fall hazard", "Drainage congestion"],
+      "coordinates": [
+        [85.70, 20.10], [85.95, 20.10], [85.95, 20.40], [85.70, 20.40], [85.70, 20.10]
+      ]
+    },
+    {
+      "id": "rz-008",
+      "name": "Cuttack River Islands",
+      "severity": "medium",
+      "population": 95000,
+      "area_km2": 65,
+      "elevation_m": 10,
+      "districtHq": "Cuttack",
+      "riskFactors": ["Mahanadi river island flooding", "Monsoon compounding", "Isolated population pockets"],
+      "coordinates": [
+        [85.80, 20.38], [86.00, 20.38], [86.00, 20.58], [85.80, 20.58], [85.80, 20.38]
+      ]
+    },
+    {
+      "id": "rz-009",
+      "name": "Nayagarh Inland Zone",
+      "severity": "low",
+      "population": 182000,
+      "area_km2": 420,
+      "elevation_m": 85,
+      "districtHq": "Nayagarh",
+      "riskFactors": ["Inland rainfall flooding", "Wind damage to crops", "Power disruption"],
+      "coordinates": [
+        [84.80, 20.00], [85.40, 20.00], [85.40, 20.50], [84.80, 20.50], [84.80, 20.00]
+      ]
+    },
+    {
+      "id": "rz-010",
+      "name": "Balangir–Subarnapur",
+      "severity": "low",
+      "population": 210000,
+      "area_km2": 680,
+      "elevation_m": 140,
+      "districtHq": "Balangir",
+      "riskFactors": ["Residual wind impact", "Flash flood risk post-weakening"],
+      "coordinates": [
+        [83.20, 20.40], [84.00, 20.40], [84.00, 21.00], [83.20, 21.00], [83.20, 20.40]
+      ]
+    }
+  ]
+}

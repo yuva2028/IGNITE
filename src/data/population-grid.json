@@ -1,0 +1,69 @@
+{
+  "_note": "SIMULATED DEMO DATA — Population figures are modelled estimates for demonstration purposes only. Not based on real census data.",
+  "_source": "CycloneGuard AI Phase 6 – Synthetic population grid calibrated to Odisha coastal district profiles.",
+  "_methodology": "Grid cells derived from risk-zone boundaries. Population distributed proportionally by area and risk-adjusted density factors. Risk scores computed by the Phase 3 Random Forest baseline engine.",
+  "metadata": {
+    "total_cells": 46,
+    "region": "Odisha Coast, India",
+    "cyclone": "VAYU-B (Simulated)",
+    "grid_resolution_km": 15,
+    "data_status": "SIMULATED_DEMO"
+  },
+  "cells": [
+    { "id": "pg-001", "zone_id": "rz-001", "name": "Puri Town Core",       "lat": 19.80, "lng": 85.83, "population": 38400, "risk_score": 91, "risk_category": "critical", "elevation_m": 2,  "area_km2": 42 },
+    { "id": "pg-002", "zone_id": "rz-001", "name": "Puri Beachfront",       "lat": 19.76, "lng": 85.85, "population": 29800, "risk_score": 94, "risk_category": "critical", "elevation_m": 1,  "area_km2": 28 },
+    { "id": "pg-003", "zone_id": "rz-001", "name": "Puri Coastal South",    "lat": 19.72, "lng": 85.78, "population": 22100, "risk_score": 88, "risk_category": "critical", "elevation_m": 2,  "area_km2": 35 },
+    { "id": "pg-004", "zone_id": "rz-001", "name": "Satpada Peninsula",     "lat": 19.73, "lng": 85.62, "population": 18600, "risk_score": 85, "risk_category": "critical", "elevation_m": 3,  "area_km2": 38 },
+    { "id": "pg-005", "zone_id": "rz-001", "name": "Brahmagiri Coastline",  "lat": 19.83, "lng": 85.73, "population": 15100, "risk_score": 82, "risk_category": "critical", "elevation_m": 3,  "area_km2": 37 },
+
+    { "id": "pg-006", "zone_id": "rz-002", "name": "Konark Temple Zone",    "lat": 19.89, "lng": 86.10, "population": 21500, "risk_score": 89, "risk_category": "critical", "elevation_m": 3,  "area_km2": 30 },
+    { "id": "pg-007", "zone_id": "rz-002", "name": "Chandrabhaga Beach",    "lat": 19.88, "lng": 86.17, "population": 14200, "risk_score": 87, "risk_category": "critical", "elevation_m": 2,  "area_km2": 22 },
+    { "id": "pg-008", "zone_id": "rz-002", "name": "Ramachandi Shoreline",  "lat": 19.87, "lng": 86.25, "population": 10800, "risk_score": 84, "risk_category": "critical", "elevation_m": 3,  "area_km2": 20 },
+    { "id": "pg-009", "zone_id": "rz-002", "name": "Astaranga Coast",       "lat": 19.95, "lng": 86.28, "population":  8400, "risk_score": 79, "risk_category": "high",     "elevation_m": 4,  "area_km2": 23 },
+    { "id": "pg-010", "zone_id": "rz-002", "name": "Nuapada Fishing Village","lat": 19.93, "lng": 86.22, "population":  7100, "risk_score": 75, "risk_category": "high",     "elevation_m": 4,  "area_km2": 0 },
+
+    { "id": "pg-011", "zone_id": "rz-003", "name": "Chilika South Shore",   "lat": 19.46, "lng": 85.16, "population": 44200, "risk_score": 78, "risk_category": "high",     "elevation_m": 5,  "area_km2": 62 },
+    { "id": "pg-012", "zone_id": "rz-003", "name": "Barkul–Rambha",         "lat": 19.52, "lng": 85.32, "population": 38700, "risk_score": 74, "risk_category": "high",     "elevation_m": 5,  "area_km2": 58 },
+    { "id": "pg-013", "zone_id": "rz-003", "name": "Balugaon Lakeside",     "lat": 19.63, "lng": 85.42, "population": 52800, "risk_score": 71, "risk_category": "high",     "elevation_m": 6,  "area_km2": 72 },
+    { "id": "pg-014", "zone_id": "rz-003", "name": "Tangi–Khurda",          "lat": 19.72, "lng": 85.52, "population": 47900, "risk_score": 68, "risk_category": "high",     "elevation_m": 7,  "area_km2": 68 },
+    { "id": "pg-015", "zone_id": "rz-003", "name": "Chilika North Margin",  "lat": 19.76, "lng": 85.47, "population": 31400, "risk_score": 64, "risk_category": "high",     "elevation_m": 8,  "area_km2": 80 },
+
+    { "id": "pg-016", "zone_id": "rz-004", "name": "Kendrapara Town",       "lat": 20.50, "lng": 86.42, "population": 62300, "risk_score": 77, "risk_category": "high",     "elevation_m": 4,  "area_km2": 55 },
+    { "id": "pg-017", "zone_id": "rz-004", "name": "Rajnagar Mangroves",    "lat": 20.40, "lng": 86.78, "population": 29800, "risk_score": 80, "risk_category": "high",     "elevation_m": 3,  "area_km2": 92 },
+    { "id": "pg-018", "zone_id": "rz-004", "name": "Mahanadi Delta East",   "lat": 20.32, "lng": 86.58, "population": 74200, "risk_score": 73, "risk_category": "high",     "elevation_m": 5,  "area_km2": 110 },
+    { "id": "pg-019", "zone_id": "rz-004", "name": "Talachua–Pattamundai",  "lat": 20.57, "lng": 86.58, "population": 58100, "risk_score": 69, "risk_category": "high",     "elevation_m": 5,  "area_km2": 84 },
+    { "id": "pg-020", "zone_id": "rz-004", "name": "Aul Block",             "lat": 20.65, "lng": 86.63, "population": 38600, "risk_score": 65, "risk_category": "high",     "elevation_m": 6,  "area_km2": 79 },
+    { "id": "pg-021", "zone_id": "rz-004", "name": "Mahakalapada Coast",    "lat": 20.42, "lng": 86.68, "population": 28000, "risk_score": 76, "risk_category": "high",     "elevation_m": 4,  "area_km2": 0 },
+    { "id": "pg-022", "zone_id": "rz-004", "name": "Betnoti Riverside",     "lat": 20.68, "lng": 86.40, "population": 50300, "risk_score": 62, "risk_category": "high",     "elevation_m": 7,  "area_km2": 0 },
+
+    { "id": "pg-023", "zone_id": "rz-005", "name": "Jagatsinghpur Town",    "lat": 20.27, "lng": 86.17, "population": 58200, "risk_score": 70, "risk_category": "high",     "elevation_m": 6,  "area_km2": 60 },
+    { "id": "pg-024", "zone_id": "rz-005", "name": "Paradeep Port Area",    "lat": 20.31, "lng": 86.61, "population": 62800, "risk_score": 82, "risk_category": "high",     "elevation_m": 4,  "area_km2": 45 },
+    { "id": "pg-025", "zone_id": "rz-005", "name": "Kujang Industrial",     "lat": 20.27, "lng": 86.47, "population": 38200, "risk_score": 73, "risk_category": "high",     "elevation_m": 5,  "area_km2": 52 },
+    { "id": "pg-026", "zone_id": "rz-005", "name": "Biridi–Naugaon",        "lat": 20.22, "lng": 86.30, "population": 47600, "risk_score": 66, "risk_category": "high",     "elevation_m": 7,  "area_km2": 68 },
+    { "id": "pg-027", "zone_id": "rz-005", "name": "Erasama Coastal",       "lat": 20.16, "lng": 86.38, "population": 41200, "risk_score": 71, "risk_category": "high",     "elevation_m": 5,  "area_km2": 0 },
+    { "id": "pg-028", "zone_id": "rz-005", "name": "Tirtol Block",          "lat": 20.20, "lng": 86.22, "population": 30000, "risk_score": 63, "risk_category": "high",     "elevation_m": 7,  "area_km2": 0 },
+
+    { "id": "pg-029", "zone_id": "rz-006", "name": "Berhampur City",        "lat": 19.31, "lng": 84.79, "population": 96200, "risk_score": 52, "risk_category": "medium",   "elevation_m": 30, "area_km2": 55 },
+    { "id": "pg-030", "zone_id": "rz-006", "name": "Gopalpur Shoreline",    "lat": 19.26, "lng": 84.88, "population": 28400, "risk_score": 59, "risk_category": "medium",   "elevation_m": 8,  "area_km2": 35 },
+    { "id": "pg-031", "zone_id": "rz-006", "name": "Chhatrapur–Ganjam",     "lat": 19.36, "lng": 85.02, "population": 61800, "risk_score": 46, "risk_category": "medium",   "elevation_m": 25, "area_km2": 75 },
+    { "id": "pg-032", "zone_id": "rz-006", "name": "Aska–Sorada",           "lat": 19.60, "lng": 84.78, "population": 75600, "risk_score": 40, "risk_category": "medium",   "elevation_m": 55, "area_km2": 85 },
+    { "id": "pg-033", "zone_id": "rz-006", "name": "Polasara Hinterland",   "lat": 19.77, "lng": 84.95, "population": 50000, "risk_score": 38, "risk_category": "medium",   "elevation_m": 45, "area_km2": 0 },
+
+    { "id": "pg-034", "zone_id": "rz-007", "name": "Bhubaneswar Central",   "lat": 20.27, "lng": 85.84, "population": 180000,"risk_score": 48, "risk_category": "medium",   "elevation_m": 50, "area_km2": 70 },
+    { "id": "pg-035", "zone_id": "rz-007", "name": "Bhubaneswar South",     "lat": 20.21, "lng": 85.83, "population": 120000,"risk_score": 44, "risk_category": "medium",   "elevation_m": 42, "area_km2": 52 },
+    { "id": "pg-036", "zone_id": "rz-007", "name": "Khurda Town",           "lat": 20.18, "lng": 85.62, "population": 88000, "risk_score": 41, "risk_category": "medium",   "elevation_m": 48, "area_km2": 40 },
+    { "id": "pg-037", "zone_id": "rz-007", "name": "Jatni–Begunia",         "lat": 20.17, "lng": 85.72, "population": 92000, "risk_score": 39, "risk_category": "medium",   "elevation_m": 55, "area_km2": 0 },
+
+    { "id": "pg-038", "zone_id": "rz-008", "name": "Cuttack City Core",     "lat": 20.47, "lng": 85.88, "population": 72000, "risk_score": 45, "risk_category": "medium",   "elevation_m": 18, "area_km2": 38 },
+    { "id": "pg-039", "zone_id": "rz-008", "name": "Cuttack River Islands", "lat": 20.52, "lng": 85.94, "population": 23000, "risk_score": 55, "risk_category": "medium",   "elevation_m": 10, "area_km2": 27 },
+
+    { "id": "pg-040", "zone_id": "rz-009", "name": "Nayagarh Town",         "lat": 20.13, "lng": 85.10, "population": 58200, "risk_score": 28, "risk_category": "low",      "elevation_m": 90, "area_km2": 95 },
+    { "id": "pg-041", "zone_id": "rz-009", "name": "Daspalla Interior",     "lat": 20.32, "lng": 84.78, "population": 62800, "risk_score": 24, "risk_category": "low",      "elevation_m": 110,"area_km2": 140 },
+    { "id": "pg-042", "zone_id": "rz-009", "name": "Phulbani Uplands",      "lat": 20.48, "lng": 84.23, "population": 61000, "risk_score": 20, "risk_category": "low",      "elevation_m": 145,"area_km2": 185 },
+
+    { "id": "pg-043", "zone_id": "rz-010", "name": "Balangir District",     "lat": 20.72, "lng": 83.48, "population": 72500, "risk_score": 18, "risk_category": "low",      "elevation_m": 150,"area_km2": 210 },
+    { "id": "pg-044", "zone_id": "rz-010", "name": "Titilagarh Plateau",    "lat": 20.29, "lng": 83.15, "population": 48200, "risk_score": 15, "risk_category": "low",      "elevation_m": 180,"area_km2": 190 },
+    { "id": "pg-045", "zone_id": "rz-010", "name": "Patnagarh Upland",      "lat": 20.71, "lng": 83.14, "population": 38600, "risk_score": 14, "risk_category": "low",      "elevation_m": 175,"area_km2": 160 },
+    { "id": "pg-046", "zone_id": "rz-010", "name": "Subarnapur Town",       "lat": 20.83, "lng": 83.90, "population": 50700, "risk_score": 17, "risk_category": "low",      "elevation_m": 140,"area_km2": 120 }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "name": "Cyclone VAYU-B",
+    "id": "BOB-2024-07",
+    "basin": "Bay of Bengal",
+    "season": "2024",
+    "note": "DEMO / SIMULATED DATA — Not a real cyclone event"
+  },
+  "currentPosition": {
+    "lat": 17.8,
+    "lng": 86.4,
+    "category": 4,
+    "windSpeedKmh": 220,
+    "windSpeedKnots": 119,
+    "pressureHpa": 944,
+    "timestamp": "T-1h"
+  },
+  "historicTrack": [
+    { "lat": 12.4, "lng": 90.2, "category": 1, "windSpeedKmh": 90,  "pressureHpa": 995, "label": "T-60h", "note": "Depression formation" },
+    { "lat": 13.2, "lng": 89.2, "category": 2, "windSpeedKmh": 110, "pressureHpa": 980, "label": "T-48h", "note": "Deep depression" },
+    { "lat": 14.5, "lng": 88.5, "category": 2, "windSpeedKmh": 135, "pressureHpa": 970, "label": "T-36h", "note": "Cyclonic storm" },
+    { "lat": 15.8, "lng": 87.8, "category": 3, "windSpeedKmh": 165, "pressureHpa": 960, "label": "T-24h", "note": "Severe cyclone" },
+    { "lat": 16.8, "lng": 87.1, "category": 4, "windSpeedKmh": 200, "pressureHpa": 952, "label": "T-12h", "note": "Very severe cyclone" },
+    { "lat": 17.8, "lng": 86.4, "category": 4, "windSpeedKmh": 220, "pressureHpa": 944, "label": "NOW",   "note": "Current position" }
+  ],
+  "forecastTrack": [
+    { "lat": 18.6, "lng": 85.9, "category": 4, "windSpeedKmh": 215, "pressureHpa": 946, "label": "T+6h",  "note": "Maintaining intensity" },
+    { "lat": 19.4, "lng": 85.5, "category": 4, "windSpeedKmh": 205, "pressureHpa": 950, "label": "T+12h", "note": "Slight weakening" },
+    { "lat": 20.2, "lng": 85.2, "category": 3, "windSpeedKmh": 185, "pressureHpa": 958, "label": "T+18h", "note": "Landfall — Puri coast" },
+    { "lat": 21.0, "lng": 84.9, "category": 3, "windSpeedKmh": 160, "pressureHpa": 966, "label": "T+24h", "note": "Inland weakening" },
+    { "lat": 21.8, "lng": 84.6, "category": 2, "windSpeedKmh": 130, "pressureHpa": 974, "label": "T+30h", "note": "Inland weakening" },
+    { "lat": 22.4, "lng": 84.2, "category": 1, "windSpeedKmh": 100, "pressureHpa": 984, "label": "T+36h", "note": "Residual low" }
+  ],
+  "forecastCone": {
+    "note": "Uncertainty envelope — 70% probability track lies within this corridor",
+    "points": [
+      { "lat": 20.2, "lng": 85.2, "radiusKm": 40 },
+      { "lat": 21.0, "lng": 84.9, "radiusKm": 65 },
+      { "lat": 21.8, "lng": 84.6, "radiusKm": 90 },
+      { "lat": 22.4, "lng": 84.2, "radiusKm": 115 }
+    ]
+  },
+  "windRadii": {
+    "note": "Approximate radii in km for each wind threshold",
+    "kt34": 280,
+    "kt50": 180,
+    "kt64": 100
+  }
+}

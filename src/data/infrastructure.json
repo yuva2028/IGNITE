@@ -1,0 +1,380 @@
+{
+  "_note": "DEMO / SIMULATED DATA — Infrastructure locations are approximate, for demonstration only.",
+  "hospitals": [
+    {
+      "id": "h-001", "name": "SCB Medical College & Hospital, Cuttack",
+      "lat": 20.472, "lng": 85.877,
+      "riskLevel": "medium", "status": "at-risk",
+      "capacity": 850, "icu_beds": 60,
+      "backupPower": true, "floodRisk": false,
+      "address": "Dock Road, Cuttack, Odisha",
+      "notes": "State's premier trauma centre. Within 34-kt wind radius."
+    },
+    {
+      "id": "h-002", "name": "MKCG Medical College, Berhampur",
+      "lat": 19.312, "lng": 84.808,
+      "riskLevel": "high", "status": "at-risk",
+      "capacity": 600, "icu_beds": 40,
+      "backupPower": true, "floodRisk": false,
+      "address": "Berhampur, Ganjam, Odisha",
+      "notes": "Southern Odisha's referral hospital. High wind exposure."
+    },
+    {
+      "id": "h-003", "name": "District HQ Hospital, Puri",
+      "lat": 19.808, "lng": 85.833,
+      "riskLevel": "critical", "status": "at-risk",
+      "capacity": 300, "icu_beds": 20,
+      "backupPower": false, "floodRisk": true,
+      "address": "Grand Road, Puri, Odisha",
+      "notes": "Inside critical surge zone. Patient transfer recommended."
+    },
+    {
+      "id": "h-004", "name": "District Hospital Kendrapara",
+      "lat": 20.499, "lng": 86.424,
+      "riskLevel": "high", "status": "at-risk",
+      "capacity": 250, "icu_beds": 15,
+      "backupPower": false, "floodRisk": true,
+      "address": "Kendrapara District, Odisha",
+      "notes": "At risk from Mahanadi delta flooding."
+    },
+    {
+      "id": "h-005", "name": "AIIMS Bhubaneswar",
+      "lat": 20.188, "lng": 85.782,
+      "riskLevel": "medium", "status": "operational",
+      "capacity": 960, "icu_beds": 120,
+      "backupPower": true, "floodRisk": false,
+      "address": "Sijua, Bhubaneswar, Odisha",
+      "notes": "High-capacity referral centre with full backup power."
+    },
+    {
+      "id": "h-006", "name": "Capital Hospital, Bhubaneswar",
+      "lat": 20.292, "lng": 85.822,
+      "riskLevel": "low", "status": "operational",
+      "capacity": 500, "icu_beds": 45,
+      "backupPower": true, "floodRisk": false,
+      "address": "Unit 6, Bhubaneswar, Odisha",
+      "notes": "Outside main impact zone. Receiving point for transfers."
+    },
+    {
+      "id": "h-007", "name": "District Hospital Jagatsinghpur",
+      "lat": 20.264, "lng": 86.170,
+      "riskLevel": "high", "status": "at-risk",
+      "capacity": 200, "icu_beds": 10,
+      "backupPower": false, "floodRisk": true,
+      "address": "Jagatsinghpur, Odisha",
+      "notes": "Within Devi river surge penetration risk corridor."
+    }
+  ],
+  "shelters": [
+    {
+      "id": "s-001", "name": "Puri Multipurpose Cyclone Shelter",
+      "lat": 19.803, "lng": 85.844,
+      "riskLevel": "high", "status": "operational",
+      "capacity": 3000, "currentOccupancy": 1840,
+      "hasWater": true, "hasMedical": true, "hasPower": true,
+      "address": "Marine Drive, Puri",
+      "notes": "Main coastal shelter. 56% capacity used."
+    },
+    {
+      "id": "s-002", "name": "Konark Cyclone Shelter",
+      "lat": 19.895, "lng": 86.124,
+      "riskLevel": "critical", "status": "operational",
+      "capacity": 2000, "currentOccupancy": 640,
+      "hasWater": true, "hasMedical": false, "hasPower": true,
+      "address": "Konark, Puri District",
+      "notes": "Within critical zone. Elevated structure provides surge protection."
+    },
+    {
+      "id": "s-003", "name": "Satapada Shelter Complex",
+      "lat": 19.621, "lng": 85.542,
+      "riskLevel": "high", "status": "operational",
+      "capacity": 1500, "currentOccupancy": 320,
+      "hasWater": true, "hasMedical": false, "hasPower": false,
+      "address": "Satapada, Chilika, Odisha",
+      "notes": "Chilika coastal community shelter."
+    },
+    {
+      "id": "s-004", "name": "Rajnagar Cyclone Shelter",
+      "lat": 20.620, "lng": 86.870,
+      "riskLevel": "high", "status": "operational",
+      "capacity": 2500, "currentOccupancy": 950,
+      "hasWater": true, "hasMedical": true, "hasPower": true,
+      "address": "Rajnagar, Kendrapara District",
+      "notes": "Bhitarkanika area primary shelter."
+    },
+    {
+      "id": "s-005", "name": "Ersama Block Shelter",
+      "lat": 20.151, "lng": 86.389,
+      "riskLevel": "high", "status": "operational",
+      "capacity": 1800, "currentOccupancy": 720,
+      "hasWater": true, "hasMedical": false, "hasPower": true,
+      "address": "Ersama, Jagatsinghpur",
+      "notes": "Devi river delta shelter."
+    },
+    {
+      "id": "s-006", "name": "Bhubaneswar Sports Complex Shelter",
+      "lat": 20.268, "lng": 85.817,
+      "riskLevel": "low", "status": "operational",
+      "capacity": 5000, "currentOccupancy": 280,
+      "hasWater": true, "hasMedical": true, "hasPower": true,
+      "address": "Kalinga Stadium Complex, BBSR",
+      "notes": "Inland mega shelter. Receiving inland evacuees."
+    },
+    {
+      "id": "s-007", "name": "Chandipur Beach Shelter",
+      "lat": 21.457, "lng": 87.012,
+      "riskLevel": "medium", "status": "operational",
+      "capacity": 1200, "currentOccupancy": 150,
+      "hasWater": true, "hasMedical": false, "hasPower": false,
+      "address": "Chandipur, Balasore District",
+      "notes": "Northern fringe shelter."
+    }
+  ],
+  "powerSubstations": [
+    {
+      "id": "p-001", "name": "Chilikadar 220kV Substation",
+      "lat": 19.710, "lng": 85.322,
+      "riskLevel": "critical", "status": "at-risk",
+      "voltageKv": 220, "affectedPopulation": 380000,
+      "backupLine": false,
+      "notes": "Critical node supplying Puri and Chilika coast. No backup routing."
+    },
+    {
+      "id": "p-002", "name": "Bhubaneswar 220kV Grid Station",
+      "lat": 20.302, "lng": 85.841,
+      "riskLevel": "medium", "status": "operational",
+      "voltageKv": 220, "affectedPopulation": 950000,
+      "backupLine": true,
+      "notes": "City grid hub. Backup routing via Talcher line."
+    },
+    {
+      "id": "p-003", "name": "Berhampur 132kV Substation",
+      "lat": 19.295, "lng": 84.797,
+      "riskLevel": "high", "status": "at-risk",
+      "voltageKv": 132, "affectedPopulation": 260000,
+      "backupLine": false,
+      "notes": "Southern grid feed. Exposed to direct wind impact."
+    },
+    {
+      "id": "p-004", "name": "Paradeep Port Grid",
+      "lat": 20.316, "lng": 86.607,
+      "riskLevel": "high", "status": "at-risk",
+      "voltageKv": 132, "affectedPopulation": 95000,
+      "backupLine": false,
+      "notes": "Industrial port zone. Surge flood risk to switchyard."
+    },
+    {
+      "id": "p-005", "name": "Cuttack 220kV Substation",
+      "lat": 20.471, "lng": 85.870,
+      "riskLevel": "medium", "status": "at-risk",
+      "voltageKv": 220, "affectedPopulation": 720000,
+      "backupLine": true,
+      "notes": "North grid hub. Wind speed within operating limit at current track."
+    },
+    {
+      "id": "p-006", "name": "Jagatsinghpur 33kV Sub",
+      "lat": 20.261, "lng": 86.160,
+      "riskLevel": "high", "status": "at-risk",
+      "voltageKv": 33, "affectedPopulation": 140000,
+      "backupLine": false,
+      "notes": "Local distribution. Surge inundation risk."
+    },
+    {
+      "id": "p-007", "name": "Phulbani 132kV Substation",
+      "lat": 20.475, "lng": 84.236,
+      "riskLevel": "low", "status": "operational",
+      "voltageKv": 132, "affectedPopulation": 110000,
+      "backupLine": true,
+      "notes": "Inland station. Low direct impact expected."
+    }
+  ],
+  "bridges": [
+    {
+      "id": "b-001", "name": "Devi River Bridge (NH-316B)",
+      "lat": 20.087, "lng": 86.452,
+      "riskLevel": "critical", "status": "at-risk",
+      "spanM": 420, "yearBuilt": 1978, "condition": "Fair",
+      "route": "NH-316B",
+      "notes": "Aging structure over surge-prone Devi river mouth. Critical evacuation route."
+    },
+    {
+      "id": "b-002", "name": "Chilika Causeway",
+      "lat": 19.713, "lng": 85.448,
+      "riskLevel": "critical", "status": "at-risk",
+      "spanM": 860, "yearBuilt": 1982, "condition": "Poor",
+      "route": "SH-17",
+      "notes": "Causeway across Chilika lagoon. Surge overtopping risk high."
+    },
+    {
+      "id": "b-003", "name": "Mahanadi Barrage Road Bridge",
+      "lat": 20.457, "lng": 85.904,
+      "riskLevel": "medium", "status": "at-risk",
+      "spanM": 1200, "yearBuilt": 1965, "condition": "Good",
+      "route": "NH-16",
+      "notes": "River barrage crossing. Elevated but exposed to flood discharge."
+    },
+    {
+      "id": "b-004", "name": "Paradeep Approach Bridge",
+      "lat": 20.297, "lng": 86.553,
+      "riskLevel": "high", "status": "at-risk",
+      "spanM": 340, "yearBuilt": 1995, "condition": "Good",
+      "route": "NH-53",
+      "notes": "Port access route. Surge risk if sea pushes back."
+    },
+    {
+      "id": "b-005", "name": "Subarnarekha River Bridge",
+      "lat": 21.513, "lng": 87.068,
+      "riskLevel": "medium", "status": "operational",
+      "spanM": 580, "yearBuilt": 2004, "condition": "Good",
+      "route": "NH-60",
+      "notes": "Northern boundary bridge. Within outer wind bands."
+    },
+    {
+      "id": "b-006", "name": "Brahmani River Road Bridge",
+      "lat": 20.750, "lng": 86.782,
+      "riskLevel": "high", "status": "at-risk",
+      "spanM": 760, "yearBuilt": 1971, "condition": "Fair",
+      "route": "SH-62",
+      "notes": "Delta crossing. Risk from Brahmani river surge pulse."
+    }
+  ],
+  "roads": [
+    {
+      "id": "r-001", "name": "NH-316 — Puri to Konark",
+      "riskLevel": "critical", "status": "at-risk",
+      "coordinates": [[85.838, 19.808], [85.930, 19.850], [86.003, 19.880], [86.125, 19.897]],
+      "lengthKm": 36, "notes": "Primary coastal corridor. Surge inundation risk at multiple low-lying sections."
+    },
+    {
+      "id": "r-002", "name": "NH-16 — Bhubaneswar to Berhampur",
+      "riskLevel": "medium", "status": "at-risk",
+      "coordinates": [[85.838, 20.296], [85.672, 20.061], [85.365, 19.668], [84.808, 19.312]],
+      "lengthKm": 162, "notes": "Main evacuation artery. Wind damage to overhead lines possible."
+    },
+    {
+      "id": "r-003", "name": "SH-17 — Puri to Satapada (Chilika)",
+      "riskLevel": "high", "status": "at-risk",
+      "coordinates": [[85.838, 19.808], [85.700, 19.740], [85.550, 19.630], [85.450, 19.550]],
+      "lengthKm": 48, "notes": "Chilika coastal road. Prone to surge overtopping."
+    },
+    {
+      "id": "r-004", "name": "NH-53 — Cuttack to Paradeep",
+      "riskLevel": "high", "status": "at-risk",
+      "coordinates": [[85.877, 20.472], [86.100, 20.380], [86.380, 20.310], [86.607, 20.316]],
+      "lengthKm": 92, "notes": "Industrial port access. Partial flooding risk in delta sections."
+    },
+    {
+      "id": "r-005", "name": "Coastal Route — Kendrapara",
+      "riskLevel": "high", "status": "at-risk",
+      "coordinates": [[86.423, 20.499], [86.610, 20.580], [86.820, 20.650], [86.872, 20.748]],
+      "lengthKm": 58, "notes": "Low-lying delta road. High inundation probability."
+    },
+    {
+      "id": "r-006", "name": "NH-16 — Bhubaneswar to Cuttack",
+      "riskLevel": "medium", "status": "operational",
+      "coordinates": [[85.838, 20.296], [85.858, 20.390], [85.877, 20.472]],
+      "lengthKm": 28, "notes": "Main north-south artery. Wind damage minor."
+    },
+    {
+      "id": "r-007", "name": "Berhampur — Ganjam Coast Road",
+      "riskLevel": "medium", "status": "at-risk",
+      "coordinates": [[84.808, 19.312], [85.050, 19.200], [85.230, 19.100], [85.380, 18.980]],
+      "lengthKm": 72, "notes": "Southern coastal road. Peripheral surge risk."
+    }
+  ],
+  "schools": [
+    {
+      "id": "sc-001", "name": "Puri Zilla High School",
+      "lat": 19.812, "lng": 85.828,
+      "riskLevel": "critical", "status": "at-risk",
+      "capacity": 1400, "elevation": 3.5, "backupPower": false, "floodRisk": true,
+      "address": "Grand Road, Puri, Odisha",
+      "notes": "Low-lying school near coastline. Designated secondary community evacuation point."
+    },
+    {
+      "id": "sc-002", "name": "Konark Model High School",
+      "lat": 19.892, "lng": 86.115,
+      "riskLevel": "critical", "status": "at-risk",
+      "capacity": 950, "elevation": 4.2, "backupPower": false, "floodRisk": true,
+      "address": "Konark Coastal Belt, Puri",
+      "notes": "Directly exposed to onshore surge. Classes suspended; ground floor flood vulnerability."
+    },
+    {
+      "id": "sc-003", "name": "Kendrapara Government College",
+      "lat": 20.495, "lng": 86.415,
+      "riskLevel": "high", "status": "at-risk",
+      "capacity": 2200, "elevation": 5.0, "backupPower": true, "floodRisk": true,
+      "address": "Kendrapara Main Town",
+      "notes": "Large educational complex. Elevated multistory building can shelter up to 1,500 evacuees."
+    },
+    {
+      "id": "sc-004", "name": "Jagatsinghpur Central Secondary",
+      "lat": 20.258, "lng": 86.175,
+      "riskLevel": "high", "status": "at-risk",
+      "capacity": 1100, "elevation": 6.5, "backupPower": false, "floodRisk": true,
+      "address": "Jagatsinghpur District HQ",
+      "notes": "Devi river delta backwater flood prone. Precautionary asset hardening needed."
+    },
+    {
+      "id": "sc-005", "name": "Ravenshaw Collegiate School, Cuttack",
+      "lat": 20.468, "lng": 85.882,
+      "riskLevel": "medium", "status": "operational",
+      "capacity": 2600, "elevation": 12.0, "backupPower": true, "floodRisk": false,
+      "address": "College Square, Cuttack",
+      "notes": "Historic inland campus. High wind exposure but elevated above river flood stage."
+    },
+    {
+      "id": "sc-006", "name": "Bhubaneswar Public School",
+      "lat": 20.298, "lng": 85.835,
+      "riskLevel": "low", "status": "operational",
+      "capacity": 1800, "elevation": 42.0, "backupPower": true, "floodRisk": false,
+      "address": "Saheed Nagar, Bhubaneswar",
+      "notes": "Inland elevated school. Operational relief staging and supply depot."
+    }
+  ],
+  "communicationTowers": [
+    {
+      "id": "t-001", "name": "Puri Marine Drive Telecom Tower",
+      "lat": 19.798, "lng": 85.820,
+      "riskLevel": "critical", "status": "at-risk",
+      "heightM": 65, "affectedPopulation": 180000, "backupBatteryHours": 8, "elevation": 2.2,
+      "notes": "Primary coastal cellular mast. Extreme wind shear threat and surge inundation risk to base station."
+    },
+    {
+      "id": "t-002", "name": "Konark Shoreline Cellular Node",
+      "lat": 19.888, "lng": 86.108,
+      "riskLevel": "critical", "status": "at-risk",
+      "heightM": 55, "affectedPopulation": 75000, "backupBatteryHours": 6, "elevation": 3.8,
+      "notes": "Shoreline microwave relay node. High risk of structural mast fatigue in >200 km/h wind gusts."
+    },
+    {
+      "id": "t-003", "name": "Chilika Coastal Relay Mast",
+      "lat": 19.680, "lng": 85.410,
+      "riskLevel": "high", "status": "at-risk",
+      "heightM": 70, "affectedPopulation": 140000, "backupBatteryHours": 12, "elevation": 4.5,
+      "notes": "Critical link connecting Chilika fishing communities to state emergency dispatch."
+    },
+    {
+      "id": "t-004", "name": "Paradeep Port Telecom Tower",
+      "lat": 20.308, "lng": 86.595,
+      "riskLevel": "high", "status": "at-risk",
+      "heightM": 80, "affectedPopulation": 110000, "backupBatteryHours": 18, "elevation": 5.2,
+      "notes": "Hardened port communication tower. Maritime radio and radar transponders active."
+    },
+    {
+      "id": "t-005", "name": "Kendrapara Delta Relay Tower",
+      "lat": 20.510, "lng": 86.435,
+      "riskLevel": "high", "status": "at-risk",
+      "heightM": 60, "affectedPopulation": 165000, "backupBatteryHours": 10, "elevation": 6.0,
+      "notes": "Low-lying base station generator prone to floodwater ingress."
+    },
+    {
+      "id": "t-006", "name": "Chandaka Hill VHF/UHF Relay",
+      "lat": 20.355, "lng": 85.745,
+      "riskLevel": "low", "status": "operational",
+      "heightM": 90, "affectedPopulation": 850000, "backupBatteryHours": 24, "elevation": 68.0,
+      "notes": "Elevated strategic state radio relay. Zero surge risk; equipped with heavy-duty backup power."
+    }
+  ]
+}
+
