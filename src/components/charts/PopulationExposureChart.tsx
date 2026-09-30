@@ -48,7 +48,7 @@ export default function PopulationExposureChart({ summary, height = 160, showLeg
               ))}
             </Pie>
             <Tooltip
-              formatter={(v: number) => [fmt(v), "Population"]}
+              formatter={(v) => [fmt(Number(v ?? 0)), "Population"]}
               contentStyle={{ background: "#0d1520", border: "1px solid #1e2d3d", borderRadius: 8, fontSize: 11, color: "#e2eaf4" }}
             />
           </PieChart>

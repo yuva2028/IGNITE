@@ -203,8 +203,8 @@ function dijkstra(
 function reconstructPath(
   targetId: string,
   result: DijkstraResult,
-  nodes: EvacNode[],
-  edges: EvacEdge[]
+  _nodes: EvacNode[],
+  _edges: EvacEdge[]
 ): { nodeIds: string[]; edgeIds: string[] } | null {
   const nodeIds: string[] = [];
   const edgeIds: string[] = [];

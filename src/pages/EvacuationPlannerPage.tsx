@@ -9,11 +9,10 @@ import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
   Navigation, AlertTriangle, Users, MapPin, Clock, Route,
   CheckCircle2, XCircle, ChevronDown, ChevronRight,
-  RotateCcw, Layers, Zap, Shield, TrendingUp, Info,
-  ArrowRight, Home, Car, BarChart3,
+  RotateCcw, Layers, Shield, Home, Car, BarChart3,
 } from 'lucide-react';
 import L from 'leaflet';
-import type { EvacuationPlan, ShelterAllocation, EvacRoute } from '../types';
+import type { EvacuationPlan, ShelterAllocation } from '../types';
 import {
   getAllZones,
   getAllShelters,
@@ -21,8 +20,6 @@ import {
   getScenarioEdges,
   getAllNodes,
   EVAC_RISK_COLORS,
-  type ZoneInfo,
-  type ShelterInfo,
 } from '../services/evacuationService';
 
 // Fix Leaflet icons
